@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mon modèle 3D</title>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <style>
+      body {
+        margin: 0;
+        background-color: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      model-viewer {
+        width: 80vw;
+        height: 80vh;
+      }
+    </style>
+  </head>
+  <body>
+    <model-viewer 
+      src="mon_model.glb" 
+      alt="Modèle 3D" 
+      auto-rotate 
+      camera-controls 
+      ar 
+      shadow-intensity="1">
+    </model-viewer>
+  </body>
+</html>
